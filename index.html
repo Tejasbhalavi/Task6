@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task6</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar">
+    <!-- navbar log  section -->
+    <div class="nav-logo">
+      <img src="/icons/shopping-bag.png"></img>
+      <div class="logo"> Logo</div>
+    </div>
+    <!-- navbar links section -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div>
+      <a href="  " class="cart-icon" id="cartBtn">
+  <i class="fas fa-shopping-cart"></i><span>Cart</span>
+</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+<!-- main section -->
+  <main class="main-section">
+  <h1>Welcome to our website</h1>
+
+  <!-- Search & Category Section -->
+  <div class="filter-bar">
+    <input type="text" id="searchBar" placeholder="Search products...">
+    <button id="searchBtn">Search</button>
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="T-shirt">T-shirt</option>
+      <option value="Shirt">Shirt</option>
+      <option value="Shoes">Shoes</option>
+      <option value="Watch">Watch</option>
+      <option value="jeans">Jeans</option>
+    </select>
+  </div>
+  <!-- Product List Section -->
+  <div id="product-list" class="product-container"></div>
+</main>
+
+
+<!-- footer section -->
+  <!-- footer section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: About -->
+    <div class="footer-about">
+      <h3>Your Company</h3>
+      <p>We provide the best products at affordable prices. Quality and service you can trust.</p>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Social -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-bottom">Copyright &copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+
+</html>
