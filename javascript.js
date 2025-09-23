@@ -1,8 +1,8 @@
-// Product data (you can fetch from API later)
+
 const products = [
   { id: 1, name: "t-shirt", price: 15000, image: "./icons/tshirt.jpg" },
   { id: 2, name: "shirt", price: 2000, image: "./icons/shirt.jpg" },
-  { id: 3, name: "shoes", price: 3000, image: "./icons/shoes.jpg" }, // fixed typo
+  { id: 3, name: "shoes", price: 3000, image: "./icons/shoes.jpg" },
   { id: 4, name: "watch", price: 5000, image: "./icons/watch1.jpg" },
   { id: 5, name: "jeans", price: 5000, image: "./icons/jeans1.jpg" },
   { id: 6, name: "t-shirt", price: 15000, image: "./icons/tshirt.jpg" },
@@ -18,7 +18,7 @@ const products = [
 const productList = document.getElementById("product-list");
 
 function renderProducts(productsToRender) {
-  productList.innerHTML = ""; // clear old items
+  productList.innerHTML = "";
   productsToRender.forEach(product => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -32,7 +32,7 @@ function renderProducts(productsToRender) {
   });
 }
 
-// Initial render
+// render
 renderProducts(products);
 
 // Cart functionality
@@ -65,7 +65,7 @@ function filterProducts() {
 }
 
 // Events
-searchBar.addEventListener("input", filterProducts); // live search
+searchBar.addEventListener("input", filterProducts);
 categoryFilter.addEventListener("change", filterProducts);
 
 // Hamburger menu toggle
