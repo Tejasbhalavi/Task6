@@ -151,6 +151,7 @@ body {
   background: #fff;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   text-align: center;
+  align-items: center;
 }
 
 .card img {
@@ -175,7 +176,8 @@ body {
 .card button {
   background: #333;
   color: white;
-  padding: 8px 12px;
+  width: 30%;
+  padding: 8px 8px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -302,6 +304,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 12px;
   }
+  .card button{
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -309,12 +314,18 @@ body {
     grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
   }
+  .card button{
+    width: 40%;
+  }
 }
 
 @media (max-width: 480px) {
   .product-container {
     grid-template-columns: 1fr; 
     gap: 8px;
+  }
+  .card button{
+    width: 40%;
   }
 }
 
